@@ -46,7 +46,8 @@ export default function ProposalDetailsForm(props) {
       },
       body: JSON.stringify({
         title: title,
-        organization: organization
+        organization: organization,
+        userId: props.userId
       })
     })
       .then(res => {

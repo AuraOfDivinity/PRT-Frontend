@@ -8,10 +8,11 @@ class NewProposal extends Component {
     this.state = { display: false };
   }
 
-  displayEditor = id => {
+  displayEditor = proposalId => {
     this.setState({
       display: true,
-      proposalId: id
+      proposalId: proposalId
+      // title: proposal.title
     });
   };
 
@@ -23,13 +24,15 @@ class NewProposal extends Component {
           <ProposalDetailsForm
             token={this.props.token}
             displayEditor={this.displayEditor}
+            userId={this.props.userId}
           />
         ) : (
           <React.Fragment>
-            <h2 style={{ fontFamily: 'Qanelas' }}>Proposal Editor</h2>
             <ProposalEditor
               proposalId={this.state.proposalId}
               token={this.props.token}
+              title={this.state.title}
+              userId={this.props.userId}
             />
           </React.Fragment>
         )}
