@@ -26,3 +26,48 @@
     width: 30rem;
   }
 }
+
+.cardHolder {
+  max-width: 1000px;
+  margin: auto;
+}
+.cardElement {
+  margin: 20px;
+  font-family: Inter;
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #f4f4f4;
+}
+
+.cardElement:hover {
+  box-shadow: 0 16px 70px -12.125px rgba(0, 0, 0, 0.3);
+}
+
+.cardHeader {
+  font-size: 32px;
+  font-weight: 800;
+  /* letter-spacing: 0.5px; */
+}
+
+.noResultsImage {
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  max-height: 800px;
+}
+
+.noResultcardElement {
+  margin: 10px;
+  font-family: Inter;
+}
+
+.noResultscardHeader {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.chip {
+  margin: 10px;
+  font-family: Inter;
+  font-size: large;
+}

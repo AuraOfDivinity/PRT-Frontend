@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './NavigationItems.css';
 
 const navItems = [
-  { id: 'My Proposals', text: 'Feed', link: '/', auth: true },
+  { id: 'My Proposals', text: 'My Proposals', link: '/', auth: true },
   { id: 'login', text: 'Login', link: '/', auth: false },
   { id: 'signup', text: 'Signup', link: '/signup', auth: false }
 ];

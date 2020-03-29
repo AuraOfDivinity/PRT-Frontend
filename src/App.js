@@ -8,7 +8,7 @@ import MainNavigation from './components/Navigation/MainNavigation/MainNavigatio
 import MobileNavigation from './components/Navigation/MobileNavigation/MobileNavigation';
 import ErrorHandler from './components/ErrorHandler/ErrorHandler';
 import FeedPage from './pages/Feed/Feed';
-import SinglePostPage from './pages/Feed/SinglePost/SinglePost';
+import ProposalEditor from './pages/Proposal/ProposalEditor';
 import LoginPage from './pages/Auth/Login';
 import SignupPage from './pages/Auth/Signup';
 import NewProposal from '../src/pages/Proposal/NewProposal';
@@ -208,9 +208,9 @@ class App extends Component {
             )}
           />
           <Route
-            path='/:postId'
+            path='/:proposalId'
             render={props => (
-              <SinglePostPage
+              <ProposalEditor
                 {...props}
                 userId={this.state.userId}
                 token={this.state.token}
