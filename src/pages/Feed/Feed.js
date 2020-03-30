@@ -27,7 +27,7 @@ class Feed extends Component {
   }
 
   getUserProposals = () => {
-    fetch('http://localhost:8080/proposal/getbyuserid', {
+    fetch('https://prtbackend.herokuapp.com/proposal/getbyuserid', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
