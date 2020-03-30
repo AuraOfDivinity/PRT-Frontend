@@ -49,7 +49,7 @@ class Feed extends Component {
   };
 
   handleProposalDelete = proposalId => {
-    fetch('http://localhost:8080/proposal/delete/' + proposalId, {
+    fetch('https://prtbackend.herokuapp.com/proposal/delete/' + proposalId, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
