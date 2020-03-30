@@ -49,7 +49,7 @@ export default function AttachFileModal(props) {
   };
 
   const fileUpload = file => {
-    const url = 'http://localhost:8080/proposal/attach';
+    const url = 'https://prtbackend.herokuapp.com/proposal/attach';
     const method = 'POST';
     const formData = new FormData();
     formData.append('file', file);

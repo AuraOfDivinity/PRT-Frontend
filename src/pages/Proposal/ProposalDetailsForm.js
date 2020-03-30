@@ -38,7 +38,7 @@ export default function ProposalDetailsForm(props) {
 
   const handleClick = () => {
     console.log(props.token);
-    fetch('http://localhost:8080/proposal/create', {
+    fetch('https://prtbackend.herokuapp.com/proposal/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

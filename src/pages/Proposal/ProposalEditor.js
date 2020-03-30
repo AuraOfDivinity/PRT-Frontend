@@ -59,7 +59,7 @@ class ProposalEditor extends React.Component {
 
   getData = () => {
     console.log('get data called');
-    fetch('http://localhost:8080/proposal/getbyid', {
+    fetch('https://prtbackend.herokuapp.com/proposal/getbyid', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ class ProposalEditor extends React.Component {
   saveData = () => {
     this.setState({ isSaving: true });
     setTimeout(() => {
-      fetch('http://localhost:8080/proposal/save', {
+      fetch('https://prtbackend.herokuapp.com/proposal/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -112,7 +112,8 @@ class ProposalEditor extends React.Component {
 
   updateStatus = () => {
     fetch(
-      'http://localhost:8080/proposal/updatestatus/' + this.state.proposalId,
+      'https://prtbackend.herokuapp.com/proposal/updatestatus/' +
+        this.state.proposalId,
       {
         method: 'POST',
         headers: {
